@@ -5,9 +5,39 @@ body { background-color: cadetblue;
 
 .cityselect {  display: flex;
                justify-content: center;
-               font-size: 20px;
+               font-size: 10px;
                height: auto;
                width: auto;
 
 
 }
+
+.card {
+        border: 2px solid white;
+        border-radius: 5%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-left: 40px;
+        width: 400px;
+        height: 400px;
+    
+        }
+
+
+
+p.main { color: white;
+        display: flex;
+        flex-direction: column;
+
+   
+
+
+}
+
+
+.temp { font-size: 10px;
+        color: white;}
+
