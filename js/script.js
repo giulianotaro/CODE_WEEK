@@ -1,15 +1,7 @@
 import { place } from "./data.js";
 
-/* const API = { apiKey : `97cb9169215648941878bdef535de1fd`,
-              weatherUrl : `https://api.openweathermap.org/data/2.5/weather?`
-} */
-
 const choosePlace = document.getElementById("choosePlace");
-const nameOfCity = document.querySelector(`#name`);
-const temp = document.querySelector(".main");
-const description = document.querySelector(".description");
-const humidity = document.querySelector(".humidity");
-const card = document.querySelector(".card");
+
 
 choosePlace.innerHTML = place.reduce(
   (options, { value, name }) =>
@@ -25,35 +17,26 @@ choosePlace.addEventListener("change", function () {
   )
     .then((response) => response.json())
     .then((data) => {
-      const tempValue = data["main"]["temp"] 
+      const tempValue = data["main"]["temp"];
       const nameValue = data["name"];
       const descValue = data["weather"][0]["description"];
       const humValue = data["main"]["humidity"];
-      const windValue = data["wind"] ["speed"];
+      const windValue = data["wind"]["speed"];
 
-      let temperature = (Math.floor(`${tempValue}`));
-      let wind = (Math.floor(`${windValue}`));
+      let temperatureNum = Math.floor(`${tempValue}`);
+      let windNum = Math.floor(`${windValue}`);
+
+      const nameofcity = document.querySelector(".nameofcity");
+      const weather = document.querySelector(".weather");
+      const wind = document.querySelector(".wind");
+      const temperature = document.querySelector(".temperature");
+      const humidity = document.querySelector(".humidity");
+
+      nameofcity.replaceChildren(`${nameValue}`);
+      weather.replaceChildren(` weather: ${descValue} `);
+      wind.replaceChildren (` speed's wind: ${windNum} `);
+      temperature.replaceChildren(`temperature: ${temperatureNum}°C `);
+      humidity.replaceChildren(` humidity: ${humValue}% `);
       
-      
-
-      let pElement = document.querySelectorAll("div > p")[0];
-
-      while (pElement.firstChild) pElement.removeChild(pElement.firstChild);
-      pElement.appendChild(
-       document.createElement ("p") ( `  ${nameValue} 
-            
-            weather: ${descValue} 
-                  
-            speed's wind: ${wind} 
-
-            temperature: ${temperature}°C
-            
-            
-            humidity: ${humValue}%
-
-          
-           ` 
-        )
-      );
     });
 });

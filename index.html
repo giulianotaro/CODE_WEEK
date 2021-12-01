@@ -1,61 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Code_week_project</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <h1>Weather app for informed tourists</h1>
-    
 
     <div id="cityselect">
+      <label for="city">Choose a city:</label>
+      <select class="choosePlace" id="choosePlace"></select>
 
-        
-        <label for="city">Choose a city:</label>
-        <select class="choosePlace" id="choosePlace"></select>
-     
-        <div class="card">
+      <div class="card">
+        <h2 class="name" id="name"></h2>
 
+        <p class="nameofcity"></p>
+        <p class="weather"></p>
+        <p class="wind"></p>
+        <p class="temperature"></p>
+        <p class="humidity"></p>
+      </div>
+    </div>
 
-            <h2 class="name" id="name"></h2>
-            
-
-            <p class="description">
-                
-            </p>
-
-            <p class="main"></p> 
-            
-           
-            
-            <p class="humidity"></p>
-
-
-           
-
-
-          </div>
-
-
-
-
-
-
-
-    </div> 
-
-
-
-
-
-
-
-
-
-<script src="js/script.js" type="module"></script>    
-</body>
+    <script src="js/script.js" type="module"></script>
+  </body>
 </html>

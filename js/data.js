@@ -13,7 +13,7 @@ let place = [{
 },
 {
     name: "Aci Sant'Antonio", 
-    value: "aci+sant'antionio"
+    value: "aci+sant'+antonio"
 },
 {
     name: "Acireale", 
