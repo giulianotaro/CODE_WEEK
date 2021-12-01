@@ -9,16 +9,14 @@
   </head>
   <body>
     <h1>Weather app for informed tourists</h1>
-
+    <div class="dateContainer">
+      <p class="date"></p>
+    </div>
     <div id="cityselect">
-
-        
-
-
       <label for="city"></label>
       <select class="choosePlace" id="choosePlace"></select>
 
-        <div class="card">
+      <div class="card">
         <h2 class="name" id="name"></h2>
 
         <p class="nameofcity"></p>
@@ -29,6 +27,16 @@
 
         <p class="select"></p>
       </div>
+    </div>
+
+    <div class="modal">
+      <h4>Welcome!</h4>
+      <p>
+        Please, select a place <br />
+        from the menu and find out <br />
+        the current weather .
+      </p>
+      <button class="btnclose">𝗫</button>
     </div>
 
     <script src="js/script.js" type="module"></script>

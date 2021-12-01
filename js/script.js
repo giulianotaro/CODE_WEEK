@@ -1,6 +1,17 @@
 import { place } from "./data.js";
 
+const today = new Date();
+document.querySelector(".date").textContent = today.toString();
+
 const choosePlace = document.getElementById("choosePlace");
+
+const modal = document.querySelector(".modal");
+const btnClose = document.querySelector(".btnclose");
+
+modal.style.display = "flex";
+btnClose.addEventListener("click", () => {
+  modal.style.display = "none";
+});
 
 choosePlace.innerHTML = place.reduce(
   (options, { value, name }) =>
