@@ -2,12 +2,12 @@ import { place } from "./data.js";
 
 const choosePlace = document.getElementById("choosePlace");
 
-
 choosePlace.innerHTML = place.reduce(
   (options, { value, name }) =>
-    (options += `<option value="${value}">${name}</option>`),
-  '<option value="" selected></option>'
+    (options += `<option class="ok" value="${value}">${name}</option>`)
 );
+
+const select = document.querySelector(".select");
 
 choosePlace.addEventListener("change", function () {
   fetch(
@@ -34,9 +34,8 @@ choosePlace.addEventListener("change", function () {
 
       nameofcity.replaceChildren(`${nameValue}`);
       weather.replaceChildren(` weather: ${descValue} `);
-      wind.replaceChildren (` speed's wind: ${windNum} `);
+      wind.replaceChildren(` speed's wind: ${windNum} `);
       temperature.replaceChildren(`temperature: ${temperatureNum}°C `);
       humidity.replaceChildren(` humidity: ${humValue}% `);
-      
     });
 });

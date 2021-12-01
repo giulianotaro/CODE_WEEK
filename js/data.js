@@ -1,6 +1,13 @@
-let place = [{
+let place = [
+{   name: "", 
+    value: ""
+},    
 
-    name: "Aci Bonaccorsi", 
+{   name: "Seleziona un comune", 
+    value: "Seleziona"
+},    
+
+{   name: "Aci Bonaccorsi", 
     value: "aci+bonaccorsi"
 },
 {
@@ -8,7 +15,7 @@ let place = [{
     value: "aci+castello"
 },
 {
-    name: "ACI CATENA", 
+    name: "Aci catena", 
     value: "aci+catena"
 },
 {

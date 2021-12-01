@@ -1,30 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+
+
 body { background-color: cadetblue;
+        background-image: url(https://images.unsplash.com/photo-1559424092-88b61cb7a6c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
 
 }
 
 
-.cityselect {  display: flex;
-               justify-content: center;
-               font-size: 10px;
-               height: auto;
-               width: auto;
 
 
-}
+h1 { font-family: 'Outfit', sans-serif;
+     text-align: center;}
+
+
+#cityselect{display: flex;
+            flex-direction: column;
+            align-items: center;}
 
 .card {
-        border: 2px solid white;
+        
         border-radius: 5%;
         display: flex;
         flex-direction:column;
         align-items: center;
         justify-content: center;
-        margin-top: 40px;
-        margin-left: 40px;
+        margin-top: 90px;
+        
         width: 400px;
         height: 400px;
+        background-color: white;
+        
     
         }
+
+
+
+select{text-align: center;
+       
+       margin-top: 40px;
+}
 
 
 
