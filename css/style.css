@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+
+body {
+  background-color: cadetblue;
+  background-image: url(https://images.unsplash.com/photo-1559424092-88b61cb7a6c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+}
+
+#cityselect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+
+  width: 400px;
+  height: 400px;
+  background-color: white;
+}
+
+select {
+  text-align: center;
+
+  margin-top: 40px;
+}
+
+.modal {
+  position: fixed;
+  left: 39%;
+  top: 35%;
+  font-family: "Outfit", sans-serif;
+
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+  box-shadow: 0 0 16px black;
+  background: rgb(216, 241, 249);
+  color: rgb(0, 0, 0);
+
+  transition: opacity 0.35s;
+}
+
+.modal p {
+  font-size: 16px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.dateContainer {
+  background-color: violet;
+  width: 26%;
+  height: 90px;
+  margin-left: 0px;
+  display: flex;
+}
