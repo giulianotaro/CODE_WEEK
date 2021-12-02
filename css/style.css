@@ -29,8 +29,8 @@ body {
 .logo {
   position: relative;
   z-index: 6;
-  background-image: url(/Logocodewhite-02.svg);
-  background-repeat: no-repeat;
+  
+  
   height: 400px;
   width: 400px;
   left: 36%;
