@@ -2,10 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Iceland&family=Zen+Dots&display=swap");
 
 body {
-  background-color: cadetblue;
   background-image: url(https://images.unsplash.com/photo-1559424092-88b61cb7a6c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  width: 100%;
 
   z-index: 1;
 }
@@ -19,13 +20,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(210, 241, 249, 0.4);
+  background-color: rgba(210, 222, 249, 0.5);
 
   z-index: 1;
   cursor: pointer;
 }
 
-header {
+.logo {
   position: relative;
   z-index: 6;
   background-image: url(/Logocodewhite-02.svg);
@@ -35,17 +36,9 @@ header {
   left: 36%;
 }
 
-#cityselect {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .card {
   position: relative;
   display: flex;
-  
-  margin-top: 80px;
 
   width: 900px;
   height: 400px;
@@ -56,8 +49,9 @@ header {
 select {
   text-align: center;
   height: 40px;
+  align-self: baseline;
 
-  margin-top: 100px;
+  margin-left: 40%;
   z-index: 5;
 }
 
@@ -76,7 +70,7 @@ select {
   align-items: center;
   justify-content: center;
 
-  box-shadow: 0 0 16px black;
+  box-shadow: 0 0 16px rgba(69, 72, 72, 0.68);
   background: rgb(216, 241, 249);
   color: rgb(0, 0, 0);
 
@@ -94,8 +88,8 @@ h4 {
 }
 
 .dateContainer {
-  background-color: rgb(247, 196, 247);
-  width: 26%;
+  background-color: rgb(20, 31, 46);
+  width: 16%;
   height: auto;
   margin-left: 0px;
   display: flex;
@@ -109,20 +103,16 @@ h4 {
   font-size: 20px;
   color: white;
   padding-left: 10px;
+  letter-spacing: 1px;
 }
 
-.overlayDate {
+#cityselect {
   position: absolute;
-
-  margin-top: 300px;
-  margin-left: 17.9%;
+  margin-left: 20%;
+  margin-top: 60px;
 
   width: 900px;
   height: 400px;
-
-  
-
-  top: 206px;
 
   background-color: rgba(169, 217, 248, 0.459);
 
@@ -132,13 +122,13 @@ h4 {
 
 .nameofcity {
   font-family: "Iceland", cursive;
-  font-size: 50px;
+  font-size: 60px;
+  padding-top: 100px;
+  padding-left: 20px;
 
-  width: 600px;
+  width: 400px;
   height: 200px;
-  
 
-  text-align: left;
   color: white;
   background-color: rgb(176, 207, 253);
   opacity: 80%;
@@ -147,9 +137,12 @@ h4 {
 .weather {
   font-family: "Iceland", cursive;
   font-size: 30px;
+  background-color: thistle;
+  height: 100px;
+  width: 400px;
+  padding-top: 10%;
+  text-align: center;
 
-  
-  text-align: left;
   color: rgb(0, 0, 0);
 
   opacity: 80%;
@@ -158,15 +151,15 @@ h4 {
 .wind {
   font-family: "Iceland", cursive;
   font-size: 30px;
+  text-align: center;
 
   background-color: white;
   width: 200px;
-  height: 1gi00px;
-  padding-left: 40px;
+  height: 96px;
+  padding-top: 5%;
+  padding-left: 10px;
+  margin-top: 100px;
 
-  
-  
-  text-align: right;
   color: rgb(0, 0, 0);
 
   opacity: 90%;
@@ -175,5 +168,16 @@ h4 {
 .temperature {
   font-family: "Iceland", cursive;
   font-size: 90px;
-  
+  position: absolute;
+  padding-top: 160px;
+  padding-left: 300px;
+}
+
+.humidity {
+  font-family: "Iceland", cursive;
+  font-size: 50px;
+  position: absolute;
+  padding-top: 260px;
+  padding-left: 600px;
+  color: white;
 }

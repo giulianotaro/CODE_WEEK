@@ -33,6 +33,7 @@ choosePlace.addEventListener("change", function () {
       const descValue = data["weather"][0]["description"];
       const humValue = data["main"]["humidity"];
       const windValue = data["wind"]["speed"];
+      const imgValue = data["weather"][0]["icon"];
 
       let temperatureNum = Math.floor(`${tempValue}`);
       let windNum = Math.floor(`${windValue}`);
@@ -42,11 +43,13 @@ choosePlace.addEventListener("change", function () {
       const wind = document.querySelector(".wind");
       const temperature = document.querySelector(".temperature");
       const humidity = document.querySelector(".humidity");
+      const meteoImg = document.querySelector(".meteoImg");
 
       nameofcity.replaceChildren(`${nameValue}`);
-      weather.replaceChildren(` weather: ${descValue} `);
+      weather.replaceChildren(`${descValue} `);
       wind.replaceChildren(` speed's wind: ${windNum} `);
       temperature.replaceChildren(` ${temperatureNum}°C `);
       humidity.replaceChildren(` humidity: ${humValue}% `);
+      meteoImg.innerHTML = `<img src="https://openweathermap.org/img/wn/${imgValue}@2x.png" alt="${descValue}">`;
     });
 });
