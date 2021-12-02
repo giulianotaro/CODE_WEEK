@@ -55,12 +55,16 @@ let place = [
     value: "camporotondo+etneo"
 },
 {
-    name: "Castel di iudica", 
-    value: "castel+di+iudica"
+    name: "Castel di Judica", 
+    value: "castel+di+judica"
 },
 {
     name: "Castiglione di Sicilia", 
     value: "castiglione+di+sicilia"
+},
+{
+    name: "Catania", 
+    value: "catania"
 },
 {
     name: "Fiumefreddo", 
