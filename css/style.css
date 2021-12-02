@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Zen+Dots&display=swap");
 
 body {
   background-color: cadetblue;
@@ -70,9 +71,17 @@ h4 {
 }
 
 .dateContainer {
-  background-color: violet;
+  background-color: rgb(247, 196, 247);
   width: 26%;
-  height: 90px;
+  height: auto;
   margin-left: 0px;
   display: flex;
+  opacity: 60%;
+}
+
+.dateContainer p {
+  font-family: "Iceland", cursive;
+  font-size: 20px;
+  color: white;
+  padding-left: 10px;
 }
