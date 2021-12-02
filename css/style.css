@@ -62,7 +62,7 @@ select {
   font-family: "Outfit", sans-serif;
 
   width: 300px;
-  height: 200px;
+  height: auto;
   padding: 10px;
 
   display: none;
@@ -79,12 +79,23 @@ select {
 }
 
 .modal p {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 h4 {
-  font-size: 20px;
+  font-family: "Iceland", cursive;
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+.btnclose {
+  margin-bottom: 60px;
+  width: 100%;
+  background-color: transparent;
+  font-family: "Iceland", cursive;
+  font-size: 16px;
 }
 
 .dateContainer {
