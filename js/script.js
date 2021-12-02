@@ -46,7 +46,7 @@ choosePlace.addEventListener("change", function () {
       nameofcity.replaceChildren(`${nameValue}`);
       weather.replaceChildren(` weather: ${descValue} `);
       wind.replaceChildren(` speed's wind: ${windNum} `);
-      temperature.replaceChildren(`temperature: ${temperatureNum}°C `);
+      temperature.replaceChildren(` ${temperatureNum}°C `);
       humidity.replaceChildren(` humidity: ${humValue}% `);
     });
 });
