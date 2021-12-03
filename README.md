@@ -6,7 +6,7 @@
 </br>
 </br>
 
-<h4> Developed whit Html, Css and Javascript.
+<h4> Developed with Html, Css and Javascript.
 
 </br>
 
